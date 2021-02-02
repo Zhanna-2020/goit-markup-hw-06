@@ -915,16 +915,12 @@ border-radius: 4px;
   margin-bottom: 20px;
 }
 
-.agree {
-  display: flex;
-  align-items: center;
-  margin-left: 13px;
-}
 
-.agree-text {
+
+.agree {
   position: relative;
   display: flex;
-  margin-left: 24px;
+  margin-left: 12px;
   align-items: center;
   font-family: Roboto;
   font-weight: normal;
@@ -954,11 +950,11 @@ border-radius: 4px;
   }
    
 
-  .agree-text::before {
+  .agree-icon::before {
     content: '';
-    top: 50%;
+    top: 0;
     left:0;
-    transform: translateY(-50%);
+    margin-right: 9px;
     display: block;
     width: 16px;
     height: 15px;
@@ -967,7 +963,7 @@ border-radius: 4px;
     background-color: var(--light-color);
   }
   
-  .checkbox:checked + .agree-text::before{
+  .checkbox:checked + .agree-icon::before{
     content: '';
     border-color: var(--accent-color);
     background-color: var(--accent-color);
@@ -976,7 +972,7 @@ border-radius: 4px;
     background-origin: border-box;
   }
 
-  .checkbox:focus + .agree-text::before{
+  .checkbox:focus + .agree-icon::before{
     content: '';
     border-color:  var(--accent-color);
 
